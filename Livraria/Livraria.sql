@@ -55,15 +55,6 @@ INSERT INTO Livros(Titulo, Resumo, AutorID, Edicao, ISBN, Estado, Quantidade) VA
 INSERT INTO Livros(Titulo, Resumo, AutorID, Edicao, ISBN, Estado, Quantidade) VALUES('Tutilo 2', 'Resumo 2', 2, 'Edicao 2', '1234567890', 'A', 1);
 INSERT INTO Livros(Titulo, Resumo, AutorID, Edicao, ISBN, Estado, Quantidade) VALUES('Tutilo 3', 'Resumo 3', 1, 'Edicao 3', '1234567890', 'A', 1);
 
-       /*'Treinamento em Linguagem C', 'Introdução a linguagem C e conceitos.',
-      'Segunda','9788576050452','A',1,
-      'Lógica de Programção', 'Abordagem de tratamentos de pensamento geral.',
-      'Terceira', '9788576050453', 'A', 1,
-      'Algoritmos', 'Ensino de algoritmos com ilustrações e exercícios.',
-      'Quarta', '9788576050454', 'A', 1,
-      'Ciência da Computação', 'Histórico e abordagem da computação.',
-      'Quinta', '9788576050452', 'A', 1);*/
-
 INSERT INTO Alunos (AlunoID, Nome, NumeroRA, Curso, Estado) VALUES (1,'Thomas', 1501506, 'Ciencia da Computacao', 'A');
 INSERT INTO Alunos (AlunoID, Nome, NumeroRA, Curso, Estado) VALUES (2,'Jeff', 1511607, 'Engenharia Ambiental', 'A');
 INSERT INTO Alunos (AlunoID, Nome, NumeroRA, Curso, Estado) VALUES (3,'Joshua', 1521708, 'Engenharia Alimentos', 'A');
@@ -76,14 +67,6 @@ INSERT INTO Emprestimos (DataEmissao, DataDevolucao, DataValidade, AlunoID, Livr
 INSERT INTO Emprestimos (DataEmissao, DataDevolucao, DataValidade, AlunoID, LivroID, Estado) VALUES ('2019-04-19', '2019-04-20', '2019-04-21', 4, 4,'E');
 INSERT INTO Emprestimos (DataEmissao, DataDevolucao, DataValidade, AlunoID, LivroID, Estado) VALUES ('2019-05-22', '2019-05-23', '2019-05-24', 5, 5,'E');   
                
-/*CREATE TABLE Livros
-(
-   ISBN VARCHAR(13) NOT NULL PRIMARY KEY,
-   Titulo VARCHAR(255) NOT NULL,
-   Edicao INTEGER NOT NULL,
-   Copyright VARCHAR(4) NOT NULL
-);*/
-
 CREATE TABLE AutorISBN
 (
    AutorID INTEGER NOT NULL,
