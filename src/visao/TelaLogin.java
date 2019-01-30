@@ -79,9 +79,9 @@ public class TelaLogin extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextFieldUsuario);
-        jTextFieldUsuario.setBounds(230, 130, 240, 35);
+        jTextFieldUsuario.setBounds(230, 130, 240, 34);
         getContentPane().add(jPasswordFieldSenha);
-        jPasswordFieldSenha.setBounds(230, 170, 240, 35);
+        jPasswordFieldSenha.setBounds(230, 170, 240, 34);
 
         jLabelLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/book.png"))); // NOI18N
         getContentPane().add(jLabelLogo);
