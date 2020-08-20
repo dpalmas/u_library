@@ -6,7 +6,7 @@
 
   <img alt="License" src="https://img.shields.io/github/license/dpalmas/u_library?color=0000FF&logo=MIT">
   
-  <a href="https://github.com/dpalmas/proffy/commits/master">
+  <a href="https://github.com/dpalmas/u_library/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/dpalmas/u_library?color=0000FF">
   </a>
 </p>
