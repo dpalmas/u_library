@@ -2,15 +2,8 @@ package visao;
 
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author davijp
- */
 public class TelaLogin extends javax.swing.JFrame {
 
-   /**
-    * Creates new form TelaLogin
-    */
    public TelaLogin() {
       initComponents();
    }
@@ -140,7 +133,6 @@ public class TelaLogin extends javax.swing.JFrame {
       }
       //</editor-fold>
 
-      /* Create and display the form */
       java.awt.EventQueue.invokeLater(new Runnable() {
          public void run() {
             new TelaLogin().setVisible(true);

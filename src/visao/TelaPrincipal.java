@@ -2,10 +2,6 @@ package visao;
 
 import modeloConnection.ConexaoDB;
 
-/**
- *
- * @author davijp
- */
 public class TelaPrincipal extends javax.swing.JFrame {
 
    ConexaoDB conecta  = new ConexaoDB();

@@ -11,10 +11,6 @@ import modeloConnection.ConexaoDB;
 import modeloDao.DaoAluno;
 import modeloBeans.Aluno;
 
-/**
- *
- * @author davijp
- */
 public class FormAluno extends javax.swing.JFrame {
 
    Aluno modelo = new Aluno();
