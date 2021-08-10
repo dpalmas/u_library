@@ -2,17 +2,20 @@ package visao;
 
 import modeloConnection.ConexaoDB;
 
-public class TelaPrincipal extends javax.swing.JFrame {
+public class TelaPrincipal extends javax.swing.JFrame
+{
 
-   ConexaoDB conecta  = new ConexaoDB();
-   
-   public TelaPrincipal() {
-      initComponents();
-      conecta.conexao();
-   }
-   
-   @SuppressWarnings("unchecked")
-    private void initComponents() {
+    ConexaoDB conecta = new ConexaoDB();
+
+    public TelaPrincipal()
+    {
+        initComponents();
+        conecta.conexao();
+    }
+
+    @SuppressWarnings ("unchecked")
+    private void initComponents()
+    {
 
         jInternalFrameBemVindo = new javax.swing.JInternalFrame();
         jPanelInternalFrame = new javax.swing.JPanel();
@@ -47,47 +50,51 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jPanelInternalFrame.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanelInternalFrame.setLayout(null);
 
-        jLabel2.setFont(new java.awt.Font("Noto Sans", 1, 18)); 
+        jLabel2.setFont(new java.awt.Font("Noto Sans", 1, 18));
         jLabel2.setText("Cadastros");
         jPanelInternalFrame.add(jLabel2);
         jLabel2.setBounds(20, 10, 110, 22);
 
-        jLabel3.setFont(new java.awt.Font("Noto Sans", 1, 18)); 
+        jLabel3.setFont(new java.awt.Font("Noto Sans", 1, 18));
         jLabel3.setText("Consulta");
         jPanelInternalFrame.add(jLabel3);
         jLabel3.setBounds(20, 200, 110, 22);
 
-        jButtonConsulta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Agenda.png"))); 
+        jButtonConsulta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Agenda.png")));
         jButtonConsulta.setToolTipText("Empréstimos de Livros");
         jPanelInternalFrame.add(jButtonConsulta);
         jButtonConsulta.setBounds(20, 230, 110, 130);
 
-        jButtonCadAluno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Student.png"))); 
+        jButtonCadAluno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Student.png")));
         jButtonCadAluno.setToolTipText("Alunos");
-        jButtonCadAluno.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButtonCadAluno.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jButtonCadAlunoActionPerformed(evt);
             }
         });
         jPanelInternalFrame.add(jButtonCadAluno);
         jButtonCadAluno.setBounds(20, 40, 140, 140);
 
-        jButtonCadLivros.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/books.png"))); 
+        jButtonCadLivros.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/books.png")));
         jButtonCadLivros.setToolTipText("Livros");
-        jButtonCadLivros.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButtonCadLivros.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jButtonCadLivrosActionPerformed(evt);
             }
         });
         jPanelInternalFrame.add(jButtonCadLivros);
         jButtonCadLivros.setBounds(160, 40, 140, 140);
 
-        jButtonCadEmprestimo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/scholarship.png"))); 
+        jButtonCadEmprestimo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/scholarship.png")));
         jButtonCadEmprestimo.setToolTipText("Empréstimos");
         jPanelInternalFrame.add(jButtonCadEmprestimo);
         jButtonCadEmprestimo.setBounds(300, 40, 140, 140);
 
-        jLabelPainelFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/internalframe.png"))); 
+        jLabelPainelFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/internalframe.png")));
         jLabelPainelFundo.setMaximumSize(new java.awt.Dimension(512, 512));
         jLabelPainelFundo.setMinimumSize(new java.awt.Dimension(512, 512));
         jLabelPainelFundo.setPreferredSize(new java.awt.Dimension(512, 512));
@@ -97,14 +104,16 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jInternalFrameBemVindo.getContentPane().add(jPanelInternalFrame);
         jPanelInternalFrame.setBounds(0, 60, 980, 450);
 
-        jLabel1.setFont(new java.awt.Font("Noto Sans", 1, 18)); 
+        jLabel1.setFont(new java.awt.Font("Noto Sans", 1, 18));
         jLabel1.setText("Sistema de Gerenciamento de Livraria");
         jInternalFrameBemVindo.getContentPane().add(jLabel1);
         jLabel1.setBounds(20, 10, 400, 40);
 
-        jButtonFechar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/exit.png"))); 
-        jButtonFechar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButtonFechar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/exit.png")));
+        jButtonFechar.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jButtonFecharActionPerformed(evt);
             }
         });
@@ -114,15 +123,17 @@ public class TelaPrincipal extends javax.swing.JFrame {
         getContentPane().add(jInternalFrameBemVindo);
         jInternalFrameBemVindo.setBounds(0, 50, 990, 550);
 
-        jLabelFundoPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fundo_telaprincipal.jpg"))); 
+        jLabelFundoPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fundo_telaprincipal.jpg")));
         getContentPane().add(jLabelFundoPrincipal);
         jLabelFundoPrincipal.setBounds(0, 0, 980, 530);
 
         jMenuCadastro.setText("Cadastros");
 
         jMenuItemCadAluno.setText("Alunos");
-        jMenuItemCadAluno.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jMenuItemCadAluno.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jMenuItemCadAlunoActionPerformed(evt);
             }
         });
@@ -139,8 +150,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenuFerramentas.setText("Ferramentas");
 
         jMenuItemWelcome.setText("Tela Bem-Vindo");
-        jMenuItemWelcome.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jMenuItemWelcome.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jMenuItemWelcomeActionPerformed(evt);
             }
         });
@@ -154,8 +167,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenuSair.setText("Sair");
 
         jMenuItemSair.setText("Sair");
-        jMenuItemSair.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jMenuItemSair.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jMenuItemSairActionPerformed(evt);
             }
         });
@@ -169,59 +184,79 @@ public class TelaPrincipal extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }
 
-   private void jButtonCadLivrosActionPerformed(java.awt.event.ActionEvent evt) {
-   }
+    private void jButtonCadLivrosActionPerformed(java.awt.event.ActionEvent evt)
+    {
+    }
 
-   private void jButtonFecharActionPerformed(java.awt.event.ActionEvent evt) {
-      jInternalFrameBemVindo.dispose();
-   }
+    private void jButtonFecharActionPerformed(java.awt.event.ActionEvent evt)
+    {
+        jInternalFrameBemVindo.dispose();
+    }
 
-   private void jMenuItemSairActionPerformed(java.awt.event.ActionEvent evt) {
-      conecta.desconecta();
-      System.exit(0);
-   }
+    private void jMenuItemSairActionPerformed(java.awt.event.ActionEvent evt)
+    {
+        conecta.desconecta();
+        System.exit(0);
+    }
 
-   private void jMenuItemWelcomeActionPerformed(java.awt.event.ActionEvent evt) {
-      TelaPrincipal tela = new TelaPrincipal();
-      tela.setVisible(true);
-      dispose();
-   }
+    private void jMenuItemWelcomeActionPerformed(java.awt.event.ActionEvent evt)
+    {
+        TelaPrincipal tela = new TelaPrincipal();
+        tela.setVisible(true);
+        dispose();
+    }
 
-   private void jMenuItemCadAlunoActionPerformed(java.awt.event.ActionEvent evt) {
-      FormAluno tela = new FormAluno();
-      tela.setVisible(true);
-   }
+    private void jMenuItemCadAlunoActionPerformed(java.awt.event.ActionEvent evt)
+    {
+        FormAluno tela = new FormAluno();
+        tela.setVisible(true);
+    }
 
-   private void jButtonCadAlunoActionPerformed(java.awt.event.ActionEvent evt) {
-      FormAluno tela = new FormAluno();
-      tela.setVisible(true);
-   }
+    private void jButtonCadAlunoActionPerformed(java.awt.event.ActionEvent evt)
+    {
+        FormAluno tela = new FormAluno();
+        tela.setVisible(true);
+    }
 
-   public static void main(String args[]) {
+    public static void main(String args[])
+    {
 
-      try {
-         for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-            if ("Nimbus".equals(info.getName())) {
-               javax.swing.UIManager.setLookAndFeel(info.getClassName());
-               break;
+        try
+        {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels())
+            {
+                if ("Nimbus".equals(info.getName()))
+                {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
             }
-         }
-      } catch (ClassNotFoundException ex) {
-         java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-      } catch (InstantiationException ex) {
-         java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-      } catch (IllegalAccessException ex) {
-         java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-      } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-         java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-      }
+        }
+        catch (ClassNotFoundException ex)
+        {
+            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        catch (InstantiationException ex)
+        {
+            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        catch (IllegalAccessException ex)
+        {
+            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        catch (javax.swing.UnsupportedLookAndFeelException ex)
+        {
+            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
 
-      java.awt.EventQueue.invokeLater(new Runnable() {
-         public void run() {
-            new TelaPrincipal().setVisible(true);
-         }
-      });
-   }
+        java.awt.EventQueue.invokeLater(new Runnable()
+        {
+            public void run()
+            {
+                new TelaPrincipal().setVisible(true);
+            }
+        });
+    }
 
     private javax.swing.JButton jButtonCadAluno;
     private javax.swing.JButton jButtonCadEmprestimo;
