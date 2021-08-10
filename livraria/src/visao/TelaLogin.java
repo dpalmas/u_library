@@ -2,15 +2,16 @@ package visao;
 
 import javax.swing.JOptionPane;
 
-public class TelaLogin extends javax.swing.JFrame {
+public class TelaLogin extends javax.swing.JFrame
+{
+    public TelaLogin()
+    {
+        initComponents();
+    }
 
-   public TelaLogin() {
-      initComponents();
-   }
-
-   @SuppressWarnings("unchecked")
-    private void initComponents() {
-
+    @SuppressWarnings ("unchecked")
+    private void initComponents()
+    {
         jLabel1 = new javax.swing.JLabel();
         jLabelSenha = new javax.swing.JLabel();
         jLabelUsuario = new javax.swing.JLabel();
@@ -25,43 +26,49 @@ public class TelaLogin extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(500, 375));
         getContentPane().setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Noto Sans", 1, 18)); 
+        jLabel1.setFont(new java.awt.Font("Noto Sans", 1, 18));
         jLabel1.setText("Livraria Universitária");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(140, 70, 220, 30);
 
-        jLabelSenha.setFont(new java.awt.Font("Noto Sans", 0, 18)); 
+        jLabelSenha.setFont(new java.awt.Font("Noto Sans", 0, 18));
         jLabelSenha.setText("Senha:");
         getContentPane().add(jLabelSenha);
         jLabelSenha.setBounds(150, 180, 70, 22);
 
-        jLabelUsuario.setFont(new java.awt.Font("Noto Sans", 0, 18)); 
+        jLabelUsuario.setFont(new java.awt.Font("Noto Sans", 0, 18));
         jLabelUsuario.setText("Usuário:");
         getContentPane().add(jLabelUsuario);
         jLabelUsuario.setBounds(150, 140, 80, 20);
 
-        jButtonSair.setFont(new java.awt.Font("Noto Sans", 0, 18)); 
+        jButtonSair.setFont(new java.awt.Font("Noto Sans", 0, 18));
         jButtonSair.setText("Sair");
-        jButtonSair.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButtonSair.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jButtonSairActionPerformed(evt);
             }
         });
         getContentPane().add(jButtonSair);
         jButtonSair.setBounds(360, 210, 110, 50);
 
-        jButtonAcessar.setFont(new java.awt.Font("Noto Sans", 0, 18)); 
+        jButtonAcessar.setFont(new java.awt.Font("Noto Sans", 0, 18));
         jButtonAcessar.setText("Acessar");
-        jButtonAcessar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jButtonAcessar.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jButtonAcessarActionPerformed(evt);
             }
         });
         getContentPane().add(jButtonAcessar);
         jButtonAcessar.setBounds(230, 210, 110, 50);
 
-        jTextFieldUsuario.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        jTextFieldUsuario.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 jTextFieldUsuarioActionPerformed(evt);
             }
         });
@@ -70,11 +77,11 @@ public class TelaLogin extends javax.swing.JFrame {
         getContentPane().add(jPasswordFieldSenha);
         jPasswordFieldSenha.setBounds(230, 170, 240, 34);
 
-        jLabelLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/book.png"))); 
+        jLabelLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/book.png")));
         getContentPane().add(jLabelLogo);
         jLabelLogo.setBounds(10, 120, 140, 150);
 
-        jLabelFundoLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fundotelaLogin.png"))); 
+        jLabelFundoLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fundotelaLogin.png")));
         getContentPane().add(jLabelFundoLogin);
         jLabelFundoLogin.setBounds(0, 0, 480, 375);
 
@@ -82,48 +89,67 @@ public class TelaLogin extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }
 
-   private void jButtonAcessarActionPerformed(java.awt.event.ActionEvent evt) {
-      if (jTextFieldUsuario.getText().equals("admin") && jPasswordFieldSenha.getText().equals("livraria")){
-      TelaPrincipal tela = new TelaPrincipal();
-      tela.setVisible(true);
-      dispose();
-      } else {
-         JOptionPane.showMessageDialog(rootPane, "Senha ou usuário inválidos!");
-      }
-   }
+    private void jButtonAcessarActionPerformed(java.awt.event.ActionEvent evt)
+    {
+        if (jTextFieldUsuario.getText().equals("admin") && jPasswordFieldSenha.getText().equals("livraria"))
+        {
+            TelaPrincipal tela = new TelaPrincipal();
+            tela.setVisible(true);
+            dispose();
+        }
+        else
+        {
+            JOptionPane.showMessageDialog(rootPane, "Senha ou usuário inválidos!");
+        }
+    }
 
-   private void jButtonSairActionPerformed(java.awt.event.ActionEvent evt) {
-      System.exit(0);
-   }
+    private void jButtonSairActionPerformed(java.awt.event.ActionEvent evt)
+    {
+        System.exit(0);
+    }
 
-   private void jTextFieldUsuarioActionPerformed(java.awt.event.ActionEvent evt) {
-   }
+    private void jTextFieldUsuarioActionPerformed(java.awt.event.ActionEvent evt)
+    {
+    }
 
-   public static void main(String args[]) {
-
-      try {
-         for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-            if ("Nimbus".equals(info.getName())) {
-               javax.swing.UIManager.setLookAndFeel(info.getClassName());
-               break;
+    public static void main(String args[])
+    {
+        try
+        {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels())
+            {
+                if ("Nimbus".equals(info.getName()))
+                {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
             }
-         }
-      } catch (ClassNotFoundException ex) {
-         java.util.logging.Logger.getLogger(TelaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-      } catch (InstantiationException ex) {
-         java.util.logging.Logger.getLogger(TelaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-      } catch (IllegalAccessException ex) {
-         java.util.logging.Logger.getLogger(TelaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-      } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-         java.util.logging.Logger.getLogger(TelaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-      }
+        }
+        catch (ClassNotFoundException ex)
+        {
+            java.util.logging.Logger.getLogger(TelaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        catch (InstantiationException ex)
+        {
+            java.util.logging.Logger.getLogger(TelaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        catch (IllegalAccessException ex)
+        {
+            java.util.logging.Logger.getLogger(TelaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        catch (javax.swing.UnsupportedLookAndFeelException ex)
+        {
+            java.util.logging.Logger.getLogger(TelaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
 
-      java.awt.EventQueue.invokeLater(new Runnable() {
-         public void run() {
-            new TelaLogin().setVisible(true);
-         }
-      });
-   }
+        java.awt.EventQueue.invokeLater(new Runnable()
+        {
+            public void run()
+            {
+                new TelaLogin().setVisible(true);
+            }
+        });
+    }
 
     private javax.swing.JButton jButtonAcessar;
     private javax.swing.JButton jButtonSair;
