@@ -4,7 +4,6 @@ import modeloConnection.ConexaoDB;
 
 public class TelaPrincipal extends javax.swing.JFrame
 {
-
     ConexaoDB conecta = new ConexaoDB();
 
     public TelaPrincipal()
@@ -16,7 +15,6 @@ public class TelaPrincipal extends javax.swing.JFrame
     @SuppressWarnings ("unchecked")
     private void initComponents()
     {
-
         jInternalFrameBemVindo = new javax.swing.JInternalFrame();
         jPanelInternalFrame = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -220,7 +218,6 @@ public class TelaPrincipal extends javax.swing.JFrame
 
     public static void main(String args[])
     {
-
         try
         {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels())
